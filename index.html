@@ -1,22 +1,78 @@
 <html>
   <head>
     <title>Learning CSS</title>
-    <style>
+    <style> 
+      .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: rgba(59, 174, 59, 0.636);
+        align-content: space-around;
+        margin: 2.5%;
+        padding:2.5%;
+      }
+
+      .flex-container > .firstbox {
+        background-color: black;
+      }
+      .flex-container > .secondbox {
+        background-color: white;
+      }
+
+      .flex-container > .thirdbox {
+        background-color: yellow;
+      }
+
+      .flex-container > .fourthbox {
+        background-color: red;
+      }
+      .flex-container > .box {
+        margin: 2.5%;
+        padding: 2.5%;
+      }
+      .flex-container > .box > .box{
+        margin: 2.5%;
+        padding: 2.5%;
+      }
       h1 {
         color: red;
       }
 
+      h2 {
+        color: orange;
+      }
+
       p {
         margin: 32px;
+        color: grey;
       }
 
-      button {
+      em {
+        color: blue;
       }
 
-      /* TODO: add styles for header  */
+      table {
+      border: 2px solid;
+      }
+
+      caption {
+        color: blue;
+      }
+
+      td, th {
+        border: 3px solid;
+      }
+
       
+      /* TODO: add styles for header  */
+      header {
+        background-color: cyan;
+      }
       /* TODO: add styles for footer  */
-
+      footer {
+        background-color: black;
+        color: white;
+      }
+      
       .paragraph-1 {
         background-color: pink;
       }
@@ -25,11 +81,10 @@
   </head>
   <body>
     <header>
-      <h1 style="text-decoration: underline">I like cats!
-      </h1>
+      <h1 style="text-decoration: underline">I like cats!</h1>
     </header>
     <main>
-      <p class="paragraph-1" style="">
+      <p class="paragraph-1" style="background-color: aqua;">
         <em>Nice kitty!</em> Consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
         sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
@@ -37,7 +92,7 @@
         aliquam etiam.    
       </p>
     
-      <p style="">
+      <p style="text-decoration-line: underline;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
         sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
@@ -49,7 +104,7 @@
         erat nam at lectus urna duis.
       </p>
     
-      <p style="">
+      <p style="color:bisque; background-color: black;"">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
         sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
@@ -62,33 +117,91 @@
       </p>
     
       <table>
+        <caption>Stuff for sale</caption>
         <tr>
-          <th style="">item</th>
-          <th style="">price</th>
+          <th style="color: green;">item</th>
+          <th style="color: blue;">price</th>
         </tr>
         <tr>
-          <td style="">hotwheels car</td>
-          <td style="">$4.99</td>
+          <td style="background-color: blueviolet;">hotwheels car</td>
+          <td style="color:yellow; background-color: black;"">$4.99</td>
         </tr>
         <tr>
-          <td style="">
+          <td style="font-size: larger;">
             Cabbage patch doll
           </td>
-          <td style="">$1.99</td>
+          <td style="background-color: orange;">$1.99</td>
         </tr>
       </table>
+      <br>
     
-      <button style="">Buy Now!</button>
+      <button style="color: white; background-color: black;">Buy Now!</button>
+      <ul style="font-size: x-large; color: green">Green variants
+        <li style="color: lightgreen">light green</li>
+        <li style="color: green">green</li>
+        <li style="color: darkgreen">dark green</li>
+        <li style="color: rgb(0, 78, 0)">rgb(0,78,0)</li>
+      </ul>
+      <button>testing</button>
+    <div class="flex-container">
+    <div class="firstbox box">
+      <div class="firstbox box"></div>
+      <div class="secondbox box"></div>
+      <div class="thirdbox box"></div>
+      <div class="fourthbox box"></div>
+    </div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+    <div class="firstbox box"></div>
+    <div class="secondbox box"></div>
+    <div class="thirdbox box"></div>
+    <div class="fourthbox box"></div>
+
+      </div>
     </main>
-  
-    <nav>
-      <a> HOME </a> |
-      <a> ABOUT </a> |
-      <a> GALLERY </a>
-    </nav>
-    
+<br>
     <footer>
+      <nav>
+        <a> HOME </a> |
+        <a> ABOUT </a> |
+        <a> GALLERY </a>
+      </nav>
     </footer>
+
+
 
     <script src="./script.js"></script>
   </body>
