@@ -1,38 +1,9 @@
-<html>
+<!DOCTYPE = <html>
+<html lang="en">
   <head>
     <title>Learning CSS</title>
+    <link rel="stylesheet" href="style.css">
     <style> 
-      .flex-container {
-        display: flex;
-        flex-flow: row wrap;
-        background-color: rgba(59, 174, 59, 0.636);
-        align-content: space-around;
-        margin: 2.5%;
-        padding:2.5%;
-      }
-
-      .flex-container > .firstbox {
-        background-color: black;
-      }
-      .flex-container > .secondbox {
-        background-color: white;
-      }
-
-      .flex-container > .thirdbox {
-        background-color: yellow;
-      }
-
-      .flex-container > .fourthbox {
-        background-color: red;
-      }
-      .flex-container > .box {
-        margin: 2.5%;
-        padding: 2.5%;
-      }
-      .flex-container > .box > .box{
-        margin: 2.5%;
-        padding: 2.5%;
-      }
       h1 {
         color: red;
       }
@@ -51,7 +22,8 @@
       }
 
       table {
-      border: 2px solid;
+      border: 2px solid white;
+      color: yellow;
       }
 
       caption {
@@ -61,8 +33,6 @@
       td, th {
         border: 3px solid;
       }
-
-      
       /* TODO: add styles for header  */
       header {
         background-color: cyan;
@@ -70,18 +40,22 @@
       /* TODO: add styles for footer  */
       footer {
         background-color: black;
-        color: white;
+        text-align: center;
       }
       
       .paragraph-1 {
         background-color: pink;
       }
+      .navstyle {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
     </style>
-    <link rel="stylesheet" href="style.css">
+    
   </head>
-  <body>
-    <header>
-      <h1 style="text-decoration: underline">I like cats!</h1>
+  <body style="background-color: black;">
+    <header style="font-family: Helvetica;">
+      <h1 style="text-decoration: underline;">I like cats!</h1>
     </header>
     <main>
       <p class="paragraph-1" style="background-color: aqua;">
@@ -117,7 +91,7 @@
       </p>
     
       <table>
-        <caption>Stuff for sale</caption>
+        <caption style="font-family: Courier;"">Stuff for sale</caption>
         <tr>
           <th style="color: green;">item</th>
           <th style="color: blue;">price</th>
@@ -133,9 +107,9 @@
           <td style="background-color: orange;">$1.99</td>
         </tr>
       </table>
-      <br>
-    
+<br>
       <button style="color: white; background-color: black;">Buy Now!</button>
+<br>
       <ul style="font-size: x-large; color: green">Green variants
         <li style="color: lightgreen">light green</li>
         <li style="color: green">green</li>
@@ -143,58 +117,10 @@
         <li style="color: rgb(0, 78, 0)">rgb(0,78,0)</li>
       </ul>
       <button>testing</button>
-    <div class="flex-container">
-    <div class="firstbox box">
-      <div class="firstbox box"></div>
-      <div class="secondbox box"></div>
-      <div class="thirdbox box"></div>
-      <div class="fourthbox box"></div>
-    </div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-    <div class="firstbox box"></div>
-    <div class="secondbox box"></div>
-    <div class="thirdbox box"></div>
-    <div class="fourthbox box"></div>
-
-      </div>
     </main>
 <br>
     <footer>
-      <nav>
+      <nav class="navstyle">
         <a> HOME </a> |
         <a> ABOUT </a> |
         <a> GALLERY </a>
